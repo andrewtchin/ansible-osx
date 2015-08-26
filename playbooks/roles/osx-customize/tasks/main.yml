@@ -1,0 +1,9 @@
+---
+- name: clone vundle git repo
+  git: repo=https://github.com/gmarik/Vundle.vim.git dest="~/.vim/bundle/Vundle.vim"
+
+- name: Set OS X defaults.
+  script: osx-defaults.sh "{{ hostname }}"
+
+- name: Install vim plugins
+  command: vim +PluginInstall +qall

@@ -1,0 +1,45 @@
+---
+homebrew_taps:
+  - caskroom/cask
+  - caskroom/fonts
+  - homebrew/binary
+  - homebrew/dupes
+  - homebrew/versions
+  - thoughtbot/formulae
+
+homebrew_installed_packages:
+  - brew-cask
+  - coreutils
+  - git
+  - openssh
+  - rcm
+  - vim
+  - wget
+  - zsh
+
+homebrew_cask_apps:
+  - 1password
+  - doxie
+  - dropbox
+  - evernote
+  - firefox
+  - flux
+  - google-chrome
+  - gpgtools
+  - iterm2
+  - java
+  - lastpass
+  - libreoffice
+  - logitech-control-center
+  - seil
+  - skype
+  - steam
+  - teamviewer
+  - textwrangler
+  - tunnelblick
+  - utorrent
+  - vlc
+  - xquartz
+  - wireshark
+
+rcm_dotfiles_repo: https://github.com/andrewtchin/dotfiles.git

@@ -1,0 +1,4 @@
+---
+- name: Set shell.
+  sudo: yes
+  shell: 'chsh -s /bin/zsh {{ ansible_env["USER"] }}' 

@@ -1,0 +1,6 @@
+---
+homebrew_install_path: /usr/local/homebrew
+
+homebrew_taps:
+  - caskroom/cask
+  - homebrew/dupes

@@ -15,6 +15,3 @@
   roles:
     - osx-homebrew
     - { role: osx-customize, hostname: "{{ hostname }}" }
-
-  tasks:
-    - include: tasks/preferences.yml

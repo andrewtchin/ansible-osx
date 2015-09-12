@@ -41,5 +41,3 @@ homebrew_cask_apps:
   - vlc
   - xquartz
   - wireshark
-
-rcm_dotfiles_repo: https://github.com/andrewtchin/dotfiles.git

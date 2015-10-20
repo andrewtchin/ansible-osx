@@ -36,12 +36,6 @@
   when: homebrew_binary.stat.exists == false
   sudo: yes
 
-- name: Install OpenSSH.
-  homebrew: >
-    name=openssh
-    state=present
-    install_options=with-brewed-openssl,with-keychain-support
-
 # Tap.
 - name: Ensure configured taps are tapped.
   homebrew_tap: "tap={{ item }} state=present"

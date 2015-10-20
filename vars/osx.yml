@@ -11,7 +11,6 @@ homebrew_installed_packages:
   - brew-cask
   - coreutils
   - git
-  - openssh
   - rcm
   - vim
   - wget

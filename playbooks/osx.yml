@@ -4,9 +4,6 @@
   connection: local
   gather_facts: yes
 
-  vars_files:
-    - vars/osx.yml
-
   vars_prompt:
     - name: "hostname"
       prompt: "Hostname"

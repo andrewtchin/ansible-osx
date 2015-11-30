@@ -1,7 +1,5 @@
 ---
 - name: Install preinstall requirements.
-  hosts: localhost
-  connection: local
 
   roles:
     - osx-preinstall

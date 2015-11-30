@@ -1,6 +1,6 @@
 ---
 - name: Configure OSX Environment.
-  hosts: localhost
+  hosts: all
   gather_facts: yes
 
   vars_prompt:

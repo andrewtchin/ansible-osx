@@ -1,5 +1,7 @@
 ---
 - name: Install preinstall requirements.
+  hosts: all
+  gather_facts: yes
 
   roles:
     - osx-preinstall

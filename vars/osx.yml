@@ -27,9 +27,7 @@ homebrew_cask_apps:
   - google-chrome
   - gpgtools
   - iterm2
-  - lastpass
   - libreoffice
-  - logitech-control-center
   - seil
   - skype
   - teamviewer

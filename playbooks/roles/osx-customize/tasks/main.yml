@@ -8,11 +8,5 @@
 - name: Install vim plugins
   command: vim +PluginInstall +qall
 
-- name: Install iterm2 solarized
-  copy: src=Solarized_Dark.itermcolors dest="~/iterm2/Solarized_Dark.itermcolors" mode=0644
-
-- name: Install iterm2 solarized
-  copy: src=Solarized_Light.itermcolors dest="~/iterm2/Solarized_Light.itermcolors" mode=0644
-
 - name: Install iterm2 plist
   copy: src=com.googlecode.iterm2.plist dest="~/Library/Preferences/com.googlecode.iterm2.plist" mode=0600

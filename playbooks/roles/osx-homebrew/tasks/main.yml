@@ -9,7 +9,7 @@
   with_items: homebrew_installed_packages
 
 - name: Install emacs.
-  homebrew: name=emacs state=present install_options=with-cocoa
+  homebrew: name=emacs-mac state=present install_options=with-spacemacs-icon
   when: homebrew_install_emacs
 
 - name: Upgrade all homebrew packages (if configured).

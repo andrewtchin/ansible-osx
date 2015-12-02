@@ -6,6 +6,7 @@ homebrew_taps:
   - homebrew/dupes
   - homebrew/versions
   - thoughtbot/formulae
+  - railwaycat/emacsmacport
 
 homebrew_upgrade_all_packages: false
 homebrew_install_emacs: true

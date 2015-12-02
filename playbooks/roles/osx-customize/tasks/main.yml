@@ -2,9 +2,6 @@
 - name: clone vundle git repo
   git: repo=https://github.com/gmarik/Vundle.vim.git dest="~/.vim/bundle/Vundle.vim"
 
-- name: Set OS X defaults.
-  script: osx-defaults.sh "{{ hostname }}"
-
 - name: Install vim plugins
   command: vim +PluginInstall +qall
 
@@ -13,3 +10,6 @@
 
 - name: Load iterm2 plist
   shell: defaults read com.googlecode.iterm2
+
+- name: Set OS X defaults.
+  script: osx-defaults.sh "{{ hostname }}"

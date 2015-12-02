@@ -10,3 +10,6 @@
 
 - name: Install iterm2 plist
   copy: src=com.googlecode.iterm2.plist dest="~/Library/Preferences/com.googlecode.iterm2.plist" mode=0600
+
+- name: Load iterm2 plist
+  shell: defaults read com.googlecode.iterm2

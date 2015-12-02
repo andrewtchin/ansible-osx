@@ -11,3 +11,6 @@
   roles:
     - osx-homebrew
     - osx-customize
+
+  tasks:
+    - include: tasks/preferences.yml

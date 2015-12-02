@@ -237,17 +237,8 @@ echo "Setting location to ${screenshot_location}."
 defaults write com.apple.screencapture location -string "${screenshot_location}"
 
 echo ""
-echo "Save screenshots as PNG."
-if [ -z "$1" ]
-then
-  echo ""
-  echo "Setting screenshot format to PNG"
-  defaults write com.apple.screencapture type -string "png"
-else
-  echo ""
-  echo "Setting screenshot format to $screenshot_format"
-  defaults write com.apple.screencapture type -string "$screenshot_format"
-fi
+echo "Setting screenshot format to JPG"
+defaults write com.apple.screencapture type -string "jpg"
 
 echo ""
 echo "Enabling subpixel font rendering on non-Apple LCDs"
@@ -347,6 +338,10 @@ echo "Set Dock to auto-hide and remove the auto-hiding delay."
 defaults write com.apple.dock autohide -bool true
 defaults write com.apple.dock autohide-delay -float 0
 defaults write com.apple.dock autohide-time-modifier -float 0
+
+echo ""
+echo "Make Hidden App Icons Translucent in the Dock"
+defaults write com.apple.Dock showhidden -bool true
 
 
 ###############################################################################

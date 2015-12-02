@@ -11,5 +11,9 @@
 - name: Load iterm2 plist
   shell: defaults read com.googlecode.iterm2
 
+- name: Install spacemacs
+  git: repo=https://github.com/syl20bnr/spacemacs dest=~/.emacs.d
+  when: homebrew_install_emacs
+
 - name: Set OS X defaults.
   script: osx-defaults.sh "{{ hostname }}"

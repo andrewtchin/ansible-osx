@@ -8,9 +8,14 @@
   homebrew: "name={{ item }} state=present"
   with_items: homebrew_installed_packages
 
+- name: Install emacs.
+  homebrew: name=emacs state=present install_options=with-cocoa
+  when: homebrew_install_emacs
+
 - name: Upgrade all homebrew packages (if configured).
   homebrew: update_homebrew=yes upgrade_all=yes
   when: homebrew_upgrade_all_packages
+
 
 # Cask.
 - name: Get list of apps installed with cask.

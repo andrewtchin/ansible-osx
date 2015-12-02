@@ -1,0 +1,7 @@
+---
+- name: Add additional apps.
+  hosts: all
+  gather_facts: yes
+
+  roles:
+    - osx-apps

@@ -19,7 +19,6 @@ homebrew_installed_packages:
 
 homebrew_cask_apps:
   - 1password
-  - doxie
   - dropbox
   - evernote
   - firefox
@@ -27,12 +26,15 @@ homebrew_cask_apps:
   - google-chrome
   - gpgtools
   - iterm2
-  - libreoffice
   - seil
-  - skype
-  - teamviewer
   - textwrangler
   - tunnelblick
   - vlc
   - xquartz
   - wireshark
+
+homebrew_cask_apps_osx:
+  - doxie
+  - libreoffice
+  - skype
+  - teamviewer

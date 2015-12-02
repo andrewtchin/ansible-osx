@@ -1,0 +1,7 @@
+---
+- name: Set defaults.
+  hosts: all
+  gather_facts: yes
+
+  roles:
+    - { role: osx-defaults, hostname: "{{ hostname }}" }

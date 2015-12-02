@@ -10,4 +10,4 @@
 
   roles:
     - osx-homebrew
-    - { role: osx-customize, hostname: "{{ hostname }}" }
+    - osx-customize

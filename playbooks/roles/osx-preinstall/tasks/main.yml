@@ -43,6 +43,3 @@
 
 - name: Install brew-cask.
   homebrew: "name=brew-cask state=present"
-
-- name: Install Java.
-  command: brew cask install java

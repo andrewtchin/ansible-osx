@@ -1,6 +1,6 @@
 ---
 homebrew_install: true
-homebrew_cask_install: false
+homebrew_cask_install: true
 homebrew_upgrade_all_packages: false
 homebrew_install_emacs: true
 

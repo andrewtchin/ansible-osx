@@ -3,5 +3,10 @@
   hosts: all
   gather_facts: yes
 
+  vars_prompt:
+    - name: "hostname"
+      prompt: "Hostname"
+      default: "apple"
+
   roles:
     - { role: osx-defaults, hostname: "{{ hostname }}" }

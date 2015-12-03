@@ -3,11 +3,6 @@
   hosts: all
   gather_facts: yes
 
-  vars_prompt:
-    - name: "hostname"
-      prompt: "Hostname"
-      default: "null"
-
   roles:
     - osx-homebrew
     - osx-customize

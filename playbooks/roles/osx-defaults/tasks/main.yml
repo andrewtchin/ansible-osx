@@ -9,6 +9,7 @@
 - name: Install background.
   sudo: yes
   copy: src=DefaultDesktop.jpg dest="/System/Library/CoreServices" mode=0755
+  ignore_errors: True
 
 - name: Set OS X defaults.
   script: osx-defaults.sh "{{ hostname }}"

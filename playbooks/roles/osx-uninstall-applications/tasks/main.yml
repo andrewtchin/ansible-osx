@@ -1,5 +1,6 @@
 - name: Uninstall applications
   sudo: yes
+  ignore_errors: True
   file: path={{ item }} state=absent
   with_items:
     - "/Applications/Automator.app"
@@ -16,3 +17,82 @@
     - "/Applications/Reminders.app"
     - "/Applications/Stickies.app"
     - "/Applications/iBooks.app"
+    = "/Applications/iPhoto.app"
+
+- name: Remove files
+  sudo: yes
+  ignore_errors: True
+  file: path={{ item }} state=absent
+  with_items:
+    - "/Library/Dictionaries"
+    = "/Library/Desktop Pictures"
+
+- name: Remove voices
+  sudo: yes
+  ignore_errors: True
+  file: path={{ item }} state=absent
+  with_items:
+    - "/System/Library/Speech/Voices/Agnes.SpeechVoice"
+    - "/System/Library/Speech/Voices/Albert.SpeechVoice"
+    - "/System/Library/Speech/Voices/Alex.SpeechVoice"
+    - "/System/Library/Speech/Voices/AliceCompact.SpeechVoice"
+    - "/System/Library/Speech/Voices/AlvaCompact.SpeechVoice"
+    - "/System/Library/Speech/Voices/AmelieCompact.SpeechVoice"
+    - "/System/Library/Speech/Voices/AnnaCompact.SpeechVoice"
+    - "/System/Library/Speech/Voices/BadNews.SpeechVoice"
+    - "/System/Library/Speech/Voices/Bahh.SpeechVoice"
+    - "/System/Library/Speech/Voices/Bells.SpeechVoice"
+    - "/System/Library/Speech/Voices/Boing.SpeechVoice"
+    - "/System/Library/Speech/Voices/Bruce.SpeechVoice"
+    - "/System/Library/Speech/Voices/Bubbles.SpeechVoice"
+    - "/System/Library/Speech/Voices/CarmitCompact.SpeechVoice"
+    - "/System/Library/Speech/Voices/Cellos.SpeechVoice"
+    - "/System/Library/Speech/Voices/DamayantiCompact.SpeechVoice"
+    - "/System/Library/Speech/Voices/DanielCompact.SpeechVoice"
+    - "/System/Library/Speech/Voices/Deranged.SpeechVoice"
+    - "/System/Library/Speech/Voices/DiegoCompact.SpeechVoice"
+    - "/System/Library/Speech/Voices/EllenCompact.SpeechVoice"
+    - "/System/Library/Speech/Voices/FionaCompact.SpeechVoice"
+    - "/System/Library/Speech/Voices/Fred.SpeechVoice"
+    - "/System/Library/Speech/Voices/GoodNews.SpeechVoice"
+    - "/System/Library/Speech/Voices/Hysterical.SpeechVoice"
+    - "/System/Library/Speech/Voices/IoanaCompact.SpeechVoice"
+    - "/System/Library/Speech/Voices/JoanaCompact.SpeechVoice"
+    - "/System/Library/Speech/Voices/Junior.SpeechVoice"
+    - "/System/Library/Speech/Voices/KanyaCompact.SpeechVoice"
+    - "/System/Library/Speech/Voices/KarenCompact.SpeechVoice"
+    - "/System/Library/Speech/Voices/Kathy.SpeechVoice"
+    - "/System/Library/Speech/Voices/KyokoCompact.SpeechVoice"
+    - "/System/Library/Speech/Voices/LauraCompact.SpeechVoice"
+    - "/System/Library/Speech/Voices/LekhaCompact.SpeechVoice"
+    - "/System/Library/Speech/Voices/LucianaCompact.SpeechVoice"
+    - "/System/Library/Speech/Voices/MariskaCompact.SpeechVoice"
+    - "/System/Library/Speech/Voices/Mei-JiaCompact.SpeechVoice"
+    - "/System/Library/Speech/Voices/MelinaCompact.SpeechVoice"
+    - "/System/Library/Speech/Voices/MilenaCompact.SpeechVoice"
+    - "/System/Library/Speech/Voices/MoiraCompact.SpeechVoice"
+    - "/System/Library/Speech/Voices/MonicaCompact.SpeechVoice"
+    - "/System/Library/Speech/Voices/NoraCompact.SpeechVoice"
+    - "/System/Library/Speech/Voices/Organ.SpeechVoice"
+    - "/System/Library/Speech/Voices/PaulinaCompact.SpeechVoice"
+    - "/System/Library/Speech/Voices/Princess.SpeechVoice"
+    - "/System/Library/Speech/Voices/Ralph.SpeechVoice"
+    - "/System/Library/Speech/Voices/SamanthaCompact.SpeechVoice"
+    - "/System/Library/Speech/Voices/SaraCompact.SpeechVoice"
+    - "/System/Library/Speech/Voices/SatuCompact.SpeechVoice"
+    - "/System/Library/Speech/Voices/Sin-jiCompact.SpeechVoice"
+    - "/System/Library/Speech/Voices/TarikCompact.SpeechVoice"
+    - "/System/Library/Speech/Voices/TessaCompact.SpeechVoice"
+    - "/System/Library/Speech/Voices/ThomasCompact.SpeechVoice"
+    - "/System/Library/Speech/Voices/Ting-TingCompact.SpeechVoice"
+    - "/System/Library/Speech/Voices/Trinoids.SpeechVoice"
+    - "/System/Library/Speech/Voices/VeenaCompact.SpeechVoice"
+    - "/System/Library/Speech/Voices/Vicki.SpeechVoice"
+    - "/System/Library/Speech/Voices/Victoria.SpeechVoice"
+    - "/System/Library/Speech/Voices/Whisper.SpeechVoice"
+    - "/System/Library/Speech/Voices/XanderCompact.SpeechVoice"
+    - "/System/Library/Speech/Voices/YeldaCompact.SpeechVoice"
+    - "/System/Library/Speech/Voices/YunaCompact.SpeechVoice"
+    - "/System/Library/Speech/Voices/Zarvox.SpeechVoice"
+    - "/System/Library/Speech/Voices/ZosiaCompact.SpeechVoice"
+    - "/System/Library/Speech/Voices/ZuzanaCompact.SpeechVoice"

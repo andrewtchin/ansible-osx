@@ -2,7 +2,7 @@
 homebrew_install: true
 homebrew_cask_install: false
 homebrew_upgrade_all_packages: false
-homebrew_install_emacs: true
+homebrew_install_emacs: false
 
 homebrew_taps:
   - caskroom/cask

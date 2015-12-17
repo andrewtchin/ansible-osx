@@ -16,6 +16,10 @@
     - "/usr/local/bin"
   sudo: yes
 
+- name: Check if homebrew binary is already in place.
+  stat: path=/usr/local/bin/brew
+  register: homebrew_binary
+
 - name: Ensure homebrew is installed.
   git:
     repo: https://github.com/Homebrew/homebrew.git
@@ -23,10 +27,7 @@
     dest: "{{ homebrew_install_path }}"
     update: yes
     accept_hostkey: yes
-
-- name: Check if homebrew binary is already in place.
-  stat: path=/usr/local/bin/brew
-  register: homebrew_binary
+  when: homebrew_binary.stat.exists == false
 
 - name: Symlink brew to /usr/local/bin/brew.
   file:

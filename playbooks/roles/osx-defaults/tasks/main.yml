@@ -5,6 +5,7 @@
 - name: Remove default background.
   sudo: yes
   file: name="/System/Library/CoreServices/DefaultDesktop.jpg" state=absent
+  ignore_errors: True
 
 - name: Install background.
   sudo: yes

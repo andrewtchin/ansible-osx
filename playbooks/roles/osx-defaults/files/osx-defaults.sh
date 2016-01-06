@@ -460,12 +460,12 @@ cecho "#########################################################################
 echo ""
 echo ""
 cecho "Note that some of these changes require a logout/restart to take effect." $red
-cecho "Killing some open applications in order to take effect." $red
-echo ""
+# cecho "Killing some open applications in order to take effect." $red
+# echo ""
 
-find ~/Library/Application\ Support/Dock -name "*.db" -maxdepth 1 -delete
-for app in "Activity Monitor" "Address Book" "Calendar" "Contacts" "cfprefsd" \
-  "Dock" "Finder" "Mail" "Messages" "Safari" "SystemUIServer" \
-  "Terminal" "Transmission"; do
-  killall "${app}" > /dev/null 2>&1
-done
+# find ~/Library/Application\ Support/Dock -name "*.db" -maxdepth 1 -delete
+# for app in "Activity Monitor" "Address Book" "Calendar" "Contacts" "cfprefsd" \
+#   "Dock" "Finder" "Mail" "Messages" "Safari" "SystemUIServer" \
+#   "Terminal" "Transmission"; do
+#   killall "${app}" > /dev/null 2>&1
+# done

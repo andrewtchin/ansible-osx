@@ -17,6 +17,7 @@ homebrew_installed_packages:
   - brew-cask
   - coreutils
   - git
+  - irssi
   - openssl
   - python
   - rcm

@@ -39,7 +39,6 @@ homebrew_cask_apps:
   - tunnelblick
   - vlc
   - xquartz
-  - wireshark
 
 homebrew_cask_apps_osx:
   - doxie

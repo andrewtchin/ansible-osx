@@ -3,7 +3,11 @@
   hosts: all
   gather_facts: yes
 
+  vars:
+    - is_el_capitan:  ansible_distribution == "MacOSX" and {{ ansible_distribution_version | version_compare('10.11', '>=') }}
+
   roles:
+    - osx-python
     - osx-homebrew
     - osx-customize
 

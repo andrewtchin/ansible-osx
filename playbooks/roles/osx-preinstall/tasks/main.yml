@@ -38,9 +38,9 @@
   become: yes
 
 # Tap.
+- name: Always tap cask.
+  homebrew_tap: "tap=caskroom/cask state=present"
+
 - name: Ensure configured taps are tapped.
   homebrew_tap: "tap={{ item }} state=present"
   with_items: "{{ homebrew_taps }}"
-
-- name: Install brew-cask.
-  homebrew: "name=caskroom/cask/brew-cask state=present"

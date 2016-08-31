@@ -43,4 +43,4 @@
   with_items: "{{ homebrew_taps }}"
 
 - name: Install brew-cask.
-  homebrew: "name=brew-cask state=present"
+  homebrew: "name=caskroom/cask/brew-cask state=present"

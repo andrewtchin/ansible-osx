@@ -1,5 +1,5 @@
 - name: Uninstall applications
-  sudo: yes
+  become: yes
   ignore_errors: True
   file: path={{ item }} state=absent
   with_items:
@@ -20,7 +20,7 @@
     = "/Applications/iPhoto.app"
 
 - name: Remove files
-  sudo: yes
+  become: yes
   ignore_errors: True
   file: path={{ item }} state=absent
   with_items:
@@ -28,7 +28,7 @@
     = "/Library/Desktop Pictures"
 
 - name: Remove voices
-  sudo: yes
+  become: yes
   ignore_errors: True
   file: path={{ item }} state=absent
   with_items:

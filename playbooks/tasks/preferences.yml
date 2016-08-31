@@ -1,8 +1,8 @@
 ---
 - name: Allow brew installed zsh.
-  sudo: yes
+  become: yes
   lineinfile: dest=/etc/shells line="/usr/local/bin/zsh"
 
 - name: Set shell.
-  sudo: yes
+  become: yes
   shell: 'chsh -s /usr/local/bin/zsh {{ ansible_env["USER"] }}'

@@ -4,7 +4,7 @@
     group: admin
     mode: 0775
     state: directory
-  sudo: yes
+  become: yes
 
 - name: Ensure proper permissions on /usr/local dirs.
   file:
@@ -14,7 +14,7 @@
   with_items:
     - "/usr/local"
     - "/usr/local/bin"
-  sudo: yes
+  become: yes
 
 - name: Check if homebrew binary is already in place.
   stat: path=/usr/local/bin/brew
@@ -35,12 +35,12 @@
     dest: /usr/local/bin/brew
     state: link
   when: homebrew_binary.stat.exists == false
-  sudo: yes
+  become: yes
 
 # Tap.
 - name: Ensure configured taps are tapped.
   homebrew_tap: "tap={{ item }} state=present"
-  with_items: homebrew_taps
+  with_items: {{ homebrew_taps }}
 
 - name: Install brew-cask.
   homebrew: "name=brew-cask state=present"

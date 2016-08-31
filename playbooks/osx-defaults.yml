@@ -4,9 +4,9 @@
   gather_facts: yes
 
   vars_prompt:
-    - name: "hostname"
+    - name: "host"
       prompt: "Hostname"
       default: "apple"
 
   roles:
-    - { role: osx-defaults, hostname: "{{ hostname }}" }
+    - { role: osx-defaults, hostname: "{{ host }}" }

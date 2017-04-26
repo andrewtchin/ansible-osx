@@ -33,11 +33,11 @@ homebrew_cask_apps:
   - google-chrome
   - gpgtools
   - iterm2
-  - seil
-  - textwrangler
+  - slack
   - tunnelblick
   - vlc
   - xquartz
+ 
 
 homebrew_cask_apps_osx:
   - doxie
